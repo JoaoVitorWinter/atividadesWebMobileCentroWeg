@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+    border: black 3px solid;
+}
+
+td, th {
+    border: black 1.5px solid;
+    padding: 5px;
+}
+
+table, td, th {
+    border-collapse: collapse;
+}
+
+tr:nth-child(1) {
+    background-color: darkgreen;
+    color: lightgreen;
+}
+
+tr:nth-child(2n) {
+    background-color: burlywood;
+}
+
+tr:nth-child(2n + 3) {
+    background-color: blanchedalmond;
+}
