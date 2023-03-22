@@ -13,12 +13,15 @@ table {
     border: black 3px solid;
 }
 
-td, th {
+td,
+th {
     border: black 1.5px solid;
     padding: 5px;
 }
 
-table, td, th {
+table,
+td,
+th {
     border-collapse: collapse;
 }
 
@@ -27,10 +30,18 @@ tr:nth-child(1) {
     color: lightgreen;
 }
 
-tr:nth-child(2n) {
+tr:nth-child(2n) td:nth-child(2n + 1) {
+    background-color: blanchedalmond;
+}
+
+tr:nth-child(2n + 3) td:nth-child(2n + 1) {
     background-color: burlywood;
 }
 
-tr:nth-child(2n + 3) {
+tr:nth-child(2n) td:nth-child(2n) {
+    background-color: burlywood;
+}
+
+tr:nth-child(2n + 3) td:nth-child(2n) {
     background-color: blanchedalmond;
 }

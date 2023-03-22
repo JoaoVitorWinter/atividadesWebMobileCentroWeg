@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Sono&display=swap');
+
+body {
+    font-family: sono;
+    background-color: #7EBCE6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ADF5F9;
+}
+
+legend {
+    font-family: alkatra;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #21897E solid 4px;
+    width: 60%;
+    background-color: #3BA99C;
+}
+
+fieldset {
+    text-align: center;
+    border-color: #21897E;
+}
+
+fieldset:nth-child(-n + 2) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+label {
+    user-select: none;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    color: #ADF5F9;
+    background-color: #11675C;
+    border: #69D1C5 2px solid;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit]:hover {
+    transition: 0.5s;
+    padding: 10px 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+option[disabled] {
+    color: white;
+}
+
+.informacoesFormulario {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 5px 50px;
+    grid-auto-flow: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#confirmacoes {
+    display: grid;
+    text-align: right;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;    
+}

@@ -1,5 +1,5 @@
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #3772FF;
     color: #E6E8E6;
     display: flex;
@@ -18,7 +18,8 @@ h1 {
     text-align: center;
 }
 
-ul, ol {
+ul,
+ol {
     background-color: #FDCA40;
     padding-top: 10px;
     padding-bottom: 10px;

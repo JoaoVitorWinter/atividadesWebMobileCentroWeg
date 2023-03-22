@@ -1,0 +1,4 @@
+label:not(div label) {
+    user-select: none;
+    display: block;
+}

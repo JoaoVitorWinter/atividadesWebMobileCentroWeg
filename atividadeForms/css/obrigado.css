@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Sono&display=swap');
+
+body {
+    font-family: sono;
+    background-color: #7EBCE6;
+    text-align: center;
+}
+
+a {
+    padding: 10px;
+    color: #ADF5F9;
+    background-color: #11675C;
+    border: #47B1A3 2px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    transition: 0.5s;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
