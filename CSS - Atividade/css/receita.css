@@ -35,3 +35,27 @@ img {
     border: #080708 solid 3px;
     width: 60%;
 }
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 0.64rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.512rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.4096rem;
+    }
+}

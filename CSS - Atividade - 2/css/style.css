@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: green;
+}
+
+#margin {
+    background-color: green;
+    width: 85%;
+}
+
+#border {
+    background-color: yellow;
+}
+
+#padding {
+    background-color: blue;
+}
+
+#content {
+    background-color: white;
+}
+
+div {
+    padding: 30px;
+}
