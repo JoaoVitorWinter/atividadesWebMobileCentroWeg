@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bitter&family=Caveat&family=Courier+Prime&family=Josefin+Sans&family=Kablammo&family=Lato&family=Montserrat&family=Mountains+of+Christmas&family=Orbitron&family=Poppins&family=Rajdhani&family=Righteous&family=Rubik+Puddles&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%  ;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #0000af;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+    width: 50%;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
+
+#valores p {
+    font-size: 0.8rem;
+    padding: 10px;
+    background-color: #eee;
+    color: #0000af;
+    border-radius: 8px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

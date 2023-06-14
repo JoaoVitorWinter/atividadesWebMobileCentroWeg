@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+#contador {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #00f;
+    color: #fc0;
+    box-sizing: border-box;
+    border-bottom: #000 solid 3px;
+}
+
+#jogo {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 90%;
+}
+
+#cookie {
+    background-color: #0f0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-right: #000 solid 3px;
+}
+
+#boca {
+    background-color: #f00;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-left: #000 solid 3px;
+}
+
+img {
+    width: 90%;
+}
