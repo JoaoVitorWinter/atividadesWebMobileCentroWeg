@@ -58,6 +58,15 @@ function adicionarTarefa(nome) {
         novaTarefa.addEventListener("click", function () {
             // Quando o item da lista é clicado, adicionamos a classe concluida
             novaTarefa.classList.toggle("concluida");
+            statusTarefasSalvas = []
+            for (let indice = 0; indice < document.getElementsByClassName("tarefa").length; indice++) {
+                if (document.getElementsByClassName("tarefa")[indice].className == "tarefa concluida") {
+                    statusTarefasSalvas.push("1");
+                } else {
+                    statusTarefasSalvas.push("0");
+                }
+            }
+            localStorage.setItem("status", JSON.stringify(statusTarefasSalvas));
         });
 
         // Removendo elementos
@@ -77,11 +86,12 @@ function adicionarTarefa(nome) {
         botaoExcluir.addEventListener("click", function () {
             listaTarefas.removeChild(novaTarefa);
             tarefasSalvas = [];
+            statusTarefasSalvas = [];
             for (let indice = 0; indice < document.getElementsByClassName("tarefa").length; indice++) {
                 tarefasSalvas.push(document.getElementsByClassName("tarefa")[indice].textContent);
                 tarefasSalvas[indice] = tarefasSalvas[indice].split("Remover")[0];
 
-                if (document.getElementsByClassName("tarefa")[indice].style.backgroundColor = "#00ff00") {
+                if (document.getElementsByClassName("tarefa")[indice].style.color == "#00ff00") {
                     statusTarefasSalvas.push("1");
                 } else {
                     statusTarefasSalvas.push("0");

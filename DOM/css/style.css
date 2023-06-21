@@ -9,13 +9,13 @@ body {
 }
 
 .modo-claro {
-    background-color: #fcfcfc;
+    background-color: #eee;
     color: #111;
 }
 
 .modo-escuro {
-    background-color: #222;
-    color: #fcfcfc;
+    background-color: #111;
+    color: #eee;
 }
 
 #campo-tarefa {
@@ -75,9 +75,9 @@ body {
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
-    background-color: #5f0000;
-    color: #ff0000;
-    border: #ff0000 2px solid;
+    background-color: #500000;
+    color: #ff5050;
+    border: #ff5050 2px solid;
     cursor: pointer;
 }
 
