@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.modo-claro {
+    background-color: #fcfcfc;
+    color: #111;
+}
+
+.modo-escuro {
+    background-color: #222;
+    color: #fcfcfc;
+}
+
+button {
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border:  #111 solid 2px;
+    background-color: #EEE;
+}

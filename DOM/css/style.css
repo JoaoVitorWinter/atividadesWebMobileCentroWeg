@@ -5,7 +5,17 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
 
+.modo-claro {
+    background-color: #fcfcfc;
+    color: #111;
+}
+
+.modo-escuro {
+    background-color: #222;
+    color: #fcfcfc;
 }
 
 #campo-tarefa {
@@ -30,13 +40,13 @@ body {
 .tarefa {
     margin-top: 5px;
     padding: 10px;
-    border: 2px solid #0000ff;
+    border: 2px solid #00d0ff;
     border-radius: 4px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #0000ff;
+    color: #00d0ff;
     background-color: #00003f;
     border-radius: 8px;
     transition: 0.25s ease-in-out;

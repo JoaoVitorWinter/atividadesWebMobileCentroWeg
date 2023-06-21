@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00D0FF;
+    color: #111;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: #FF2000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input {
+    padding: 2px;
+    border-radius: 5px;
+    border: #111 solid 1px;
+}
+
+button {
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: #111 solid 2px;
+    background-color: #EEE;
+}
