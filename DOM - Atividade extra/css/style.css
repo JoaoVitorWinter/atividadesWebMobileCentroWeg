@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #00c0ff;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-family: "Orbitron", sans-serif;
+    color: #ff3f00;
+}
+
+p {
+    width: 60%;
+    text-align: center;
+}
+
+span {
+    color: #ff3f00;
+    display: none;
+}
+
+a, button {
+    color: #00c0ff;
+    background-color: #111;
+    color: #111;
+    background-color: #ff3f00;
+    text-decoration: none;
+    padding: 10px;
+    border: #111 2px solid;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    font-size: medium;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px #111;
+}
+
+#links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#nomesPaises {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ff3f00;
+    border: #111 3px solid;
+    padding: 30px;
+    gap: 20px;
+}
+
+.pais {
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.pais:hover {
+    transform: scale(1.05);
+}
+
+#bandeira {
+    height: 100px;
+    border: #111 3px solid;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input {
+    height: 30px;
+    background-color: #ff3f00;
+    border: #111 2px solid;
+    text-align: center;
+    border-radius: 3px;
+}
+
+label {
+    font-size: small;
+}
+
+table {
+    background-color: #ff3f00;
+    border: #111 3px solid;
+    padding: 0;
+    
+}
+
+td, th {
+    text-align: center;
+    border: #111 1px solid;
+    margin: 0;
+    width: 100px;
+}
+
+tr {
+    gap: 0;
+}
