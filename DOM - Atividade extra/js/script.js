@@ -1,5 +1,4 @@
 let botoesPais = document.getElementsByClassName("pais");
-let opcoes = document.getElementsByClassName("pais");
 let pergunta = 1;
 let pontos = 0;
 let ranking = JSON.parse(localStorage.getItem("ranking")) || [];
@@ -17,10 +16,10 @@ for (let i = 0; i < botoesPais.length; i++) {
         }
         
 
-        opcoes[0].textContent = "Colômbia";
-        opcoes[1].textContent = "Equador";
-        opcoes[2].textContent = "Venezuela";
-        opcoes[3].textContent = "Armênia";
+        botoesPais[0].textContent = "Colômbia";
+        botoesPais[1].textContent = "Equador";
+        botoesPais[2].textContent = "Venezuela";
+        botoesPais[3].textContent = "Armênia";
         break;
       case 2:
         if (botoesPais[i].textContent == "Colômbia") {
@@ -31,10 +30,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
 
-        opcoes[0].textContent = "Nicarágua";
-        opcoes[1].textContent = "El Salvador";
-        opcoes[2].textContent = "Honduras";
-        opcoes[3].textContent = "Guatemala";
+        botoesPais[0].textContent = "Nicarágua";
+        botoesPais[1].textContent = "El Salvador";
+        botoesPais[2].textContent = "Honduras";
+        botoesPais[3].textContent = "Guatemala";
         break;
       case 3:
         if (botoesPais[i].textContent == "El Salvador") {
@@ -45,10 +44,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
 
-        opcoes[0].textContent = "Índia";
-        opcoes[1].textContent = "Tajiquistão";
-        opcoes[2].textContent = "Costa do Marfim";
-        opcoes[3].textContent = "Níger";
+        botoesPais[0].textContent = "Índia";
+        botoesPais[1].textContent = "Tajiquistão";
+        botoesPais[2].textContent = "Costa do Marfim";
+        botoesPais[3].textContent = "Níger";
         break;
       case 4:
         if (botoesPais[i].textContent == "Níger") {
@@ -59,10 +58,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
 
-        opcoes[0].textContent = "Palestina";
-        opcoes[1].textContent = "Jordânia";
-        opcoes[2].textContent = "Sudão";
-        opcoes[3].textContent = "Sudão do Sul";
+        botoesPais[0].textContent = "Palestina";
+        botoesPais[1].textContent = "Jordânia";
+        botoesPais[2].textContent = "Sudão";
+        botoesPais[3].textContent = "Sudão do Sul";
         break;
       case 5:
         if (botoesPais[i].textContent == "Palestina") {
@@ -73,10 +72,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
 
-        opcoes[0].textContent = "Egito";
-        opcoes[1].textContent = "Síria";
-        opcoes[2].textContent = "Iêmen";
-        opcoes[3].textContent = "Iraque";
+        botoesPais[0].textContent = "Egito";
+        botoesPais[1].textContent = "Síria";
+        botoesPais[2].textContent = "Iêmen";
+        botoesPais[3].textContent = "Iraque";
         break;
       case 6:
         if (botoesPais[i].textContent == "Síria") {
@@ -87,10 +86,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
 
-        opcoes[0].textContent = "Países Baixos";
-        opcoes[1].textContent = "Rússia";
-        opcoes[2].textContent = "França";
-        opcoes[3].textContent = "Luxemburgo";
+        botoesPais[0].textContent = "Países Baixos";
+        botoesPais[1].textContent = "Rússia";
+        botoesPais[2].textContent = "França";
+        botoesPais[3].textContent = "Luxemburgo";
         break;
       case 7:
         if (botoesPais[i].textContent == "Luxemburgo") {
@@ -101,10 +100,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
         
-        opcoes[0].textContent = "Camarões";
-        opcoes[1].textContent = "Guiné";
-        opcoes[2].textContent = "Senegal";
-        opcoes[3].textContent = "Mali";
+        botoesPais[0].textContent = "Camarões";
+        botoesPais[1].textContent = "Guiné";
+        botoesPais[2].textContent = "Senegal";
+        botoesPais[3].textContent = "Mali";
         break;
       case 8:
         if (botoesPais[i].textContent == "Guiné") {
@@ -115,10 +114,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
 
-        opcoes[0].textContent = "Fiji";
-        opcoes[1].textContent = "Tuvalu";
-        opcoes[2].textContent = "Nova Zelândia";
-        opcoes[3].textContent = "Austrália";
+        botoesPais[0].textContent = "Fiji";
+        botoesPais[1].textContent = "Tuvalu";
+        botoesPais[2].textContent = "Nova Zelândia";
+        botoesPais[3].textContent = "Austrália";
         break;
       case 9:
         if (botoesPais[i].textContent == "Tuvalu") {
@@ -129,10 +128,10 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 0.5;
         }
 
-        opcoes[0].textContent = "Turquemenistão";
-        opcoes[1].textContent = "Cazaquistão";
-        opcoes[2].textContent = "Paquistão";
-        opcoes[3].textContent = "Afeganistão";
+        botoesPais[0].textContent = "Turquemenistão";
+        botoesPais[1].textContent = "Cazaquistão";
+        botoesPais[2].textContent = "Paquistão";
+        botoesPais[3].textContent = "Afeganistão";
         break;
       case 10:
         if (botoesPais[i].textContent == "Afeganistão") {
