@@ -113,9 +113,15 @@ td, th {
     text-align: center;
     border: #111 1px solid;
     margin: 0;
-    width: 100px;
+    padding: 5px;
 }
 
 tr {
     gap: 0;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
 }

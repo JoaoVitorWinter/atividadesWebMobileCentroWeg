@@ -12,6 +12,11 @@ for (let i = 0; i < botoesPais.length; i++) {
             pontos += 1;
         }
 
+        if (botoesPais[i].textContent == "Romênia") {
+            pontos += 0.5;
+        }
+        
+
         opcoes[0].textContent = "Colômbia";
         opcoes[1].textContent = "Equador";
         opcoes[2].textContent = "Venezuela";
@@ -20,6 +25,10 @@ for (let i = 0; i < botoesPais.length; i++) {
       case 2:
         if (botoesPais[i].textContent == "Colômbia") {
             pontos += 1;
+        }
+
+        if (botoesPais[i].textContent == "Equador") {
+            pontos += 0.5;
         }
 
         opcoes[0].textContent = "Nicarágua";
@@ -31,6 +40,11 @@ for (let i = 0; i < botoesPais.length; i++) {
         if (botoesPais[i].textContent == "El Salvador") {
             pontos += 1;
         }
+
+        if (botoesPais[i].textContent == "Nicarágua") {
+            pontos += 0.5;
+        }
+
         opcoes[0].textContent = "Índia";
         opcoes[1].textContent = "Tajiquistão";
         opcoes[2].textContent = "Costa do Marfim";
@@ -40,6 +54,11 @@ for (let i = 0; i < botoesPais.length; i++) {
         if (botoesPais[i].textContent == "Níger") {
             pontos += 1;
         }
+
+        if (botoesPais[i].textContent == "Índia") {
+            pontos += 0.5;
+        }
+
         opcoes[0].textContent = "Palestina";
         opcoes[1].textContent = "Jordânia";
         opcoes[2].textContent = "Sudão";
@@ -49,6 +68,11 @@ for (let i = 0; i < botoesPais.length; i++) {
         if (botoesPais[i].textContent == "Palestina") {
             pontos += 1;
         }
+
+        if (botoesPais[i].textContent == "Jordânia") {
+            pontos += 0.5;
+        }
+
         opcoes[0].textContent = "Egito";
         opcoes[1].textContent = "Síria";
         opcoes[2].textContent = "Iêmen";
@@ -58,6 +82,11 @@ for (let i = 0; i < botoesPais.length; i++) {
         if (botoesPais[i].textContent == "Síria") {
             pontos += 1;
         }
+
+        if (botoesPais[i].textContent == "Iêmen") {
+            pontos += 0.5;
+        }
+
         opcoes[0].textContent = "Países Baixos";
         opcoes[1].textContent = "Rússia";
         opcoes[2].textContent = "França";
@@ -67,6 +96,11 @@ for (let i = 0; i < botoesPais.length; i++) {
         if (botoesPais[i].textContent == "Luxemburgo") {
             pontos += 1;
         }
+
+        if (botoesPais[i].textContent == "Países Baixos") {
+            pontos += 0.5;
+        }
+        
         opcoes[0].textContent = "Camarões";
         opcoes[1].textContent = "Guiné";
         opcoes[2].textContent = "Senegal";
@@ -76,6 +110,11 @@ for (let i = 0; i < botoesPais.length; i++) {
         if (botoesPais[i].textContent == "Guiné") {
             pontos += 1;
         }
+
+        if (botoesPais[i].textContent == "Mali") {
+            pontos += 0.5;
+        }
+
         opcoes[0].textContent = "Fiji";
         opcoes[1].textContent = "Tuvalu";
         opcoes[2].textContent = "Nova Zelândia";
@@ -85,6 +124,11 @@ for (let i = 0; i < botoesPais.length; i++) {
         if (botoesPais[i].textContent == "Tuvalu") {
             pontos += 1;
         }
+
+        if (botoesPais[i].textContent == "Fiji") {
+            pontos += 0.5;
+        }
+
         opcoes[0].textContent = "Turquemenistão";
         opcoes[1].textContent = "Cazaquistão";
         opcoes[2].textContent = "Paquistão";
@@ -93,6 +137,10 @@ for (let i = 0; i < botoesPais.length; i++) {
       case 10:
         if (botoesPais[i].textContent == "Afeganistão") {
             pontos += 1;
+        }
+
+        if (botoesPais[i].textContent == "Paquistão") {
+            pontos += 0.5;
         }
 
         localStorage.setItem("pontos", JSON.stringify(pontos));
@@ -127,7 +175,6 @@ const gerarRanking = () => {
     ranking.reverse();
     var tabela = document.getElementById("tabelaRanking");
     for (let i = 0; i < ranking.length; i++) {
-        console.log("vamo");
         var row = document.createElement("tr");
         var numeroRanking = document.createElement("td");
         numeroRanking.innerText = (i + 1);
